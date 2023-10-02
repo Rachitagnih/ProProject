@@ -12,7 +12,7 @@ mongoose.connection.on('error', () => {
     console.log('Error connecting to MongoDB');
 });
 
-require('./models/user.js');
+require('./models/user.js')
 require('./models/post.js');
 
 app.use(express.json());
